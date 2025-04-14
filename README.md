@@ -30,17 +30,14 @@ Project được viết bằng Python và sử dụng thư viện `numpy` để 
 
 ### 1. Chuẩn bị file đầu vào
 - **File `data/input.txt`**: Chứa dữ liệu bạn muốn mã hóa (plaintext).  
-  - Ví dụ nội dung:  
-This is a secret message!
-
-- Lưu ý: Dữ liệu sẽ được tự động padding (thêm `\x00`) nếu không đủ độ dài 16 bytes (một block AES).
+    - Ví dụ nội dung:   This is a secret message!
+    - Lưu ý: Dữ liệu sẽ được tự động padding (thêm `\x00`) nếu không đủ độ dài 16 bytes (một block AES).
 - **File `data/key.txt`**: Chứa khóa mã hóa (key).  
-- Khóa phải là chuỗi ký tự có độ dài tối đa 16 bytes (128 bits). Nếu ngắn hơn, chương trình sẽ tự động padding bằng `\x00`.  
-- Ví dụ nội dung:  
-mysecretkey12345
+    - Khóa phải là chuỗi ký tự có độ dài tối đa 16 bytes (128 bits). Nếu ngắn hơn, chương trình sẽ tự động padding bằng `\x00`.  
+    - Ví dụ nội dung:   mysecretkey12345
 
 ### 2. Chạy chương trình
-- Đảm bảo bạn đã cài đặt các yêu cầu.  
+- Đảm bảo bạn đã cài đặt theo yêu cầu.  
 - Mở terminal và di chuyển đến thư mục dự án:
 ```bash
 cd /đường/dẫn/đến/thư/mục/dự/án
